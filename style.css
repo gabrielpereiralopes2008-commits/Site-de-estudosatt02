@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(135deg, #2c3e50, #2980b9);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção Sobre */
+.sobre {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sobre h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.sobre p {
+    margin: 0.6rem 0;
+    font-size: 1.05rem;
+}
+
+/* Conteúdo Principal */
+.conteudo {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.conteudo h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* ✅ FORMULÁRIO: ESTRUTURA EM COLUNA */
+form {
+    display: flex;
+    flex-direction: column; /* FORÇA UM ABAIXO DO OUTRO */
+    gap: 18px; /* Espaço igual entre todos os campos */
+    margin-top: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.05rem;
+    margin-bottom: 5px; /* Espaço pequeno entre texto e caixa */
+}
+
+input, textarea {
+    width: 100%; /* Todos ocupam a largura total */
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    background-color: #f8fbff;
+}
+
+button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #219653;
+}
+
+/* Aviso */
+.aviso {
+    margin-top: 2rem;
+    padding: 1.3rem;
+    background: #e8f4fd;
+    border-left: 5px solid #2980b9;
+    border-radius: 6px;
+}
+
+.aviso p {
+    margin: 0.5rem 0;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .sobre, .conteudo {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+

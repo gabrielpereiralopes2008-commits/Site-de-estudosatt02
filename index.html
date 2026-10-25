@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Nos Estudos 📚</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="envio.js"></script>
+
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header class="cabecalho">
+    <h1>📚 Ajuda Nos Estudos</h1>
+    <p>Seu espaço de apoio com alunos como você!</p>
+</header>
+
+<!-- Sobre o Projeto -->
+<section class="sobre">
+    <h2>👋 Quem responde suas dúvidas?</h2>
+    <p>✅ Somos um grupo de <strong>alunos voluntários</strong></p>
+    <p>✅ Estudamos juntos e ajudamos com explicações claras</p>
+    <p>✅ Resposta enviada diretamente no seu e-mail</p>
+    <p>✅ Matérias: Matemática, Português, Ciências, História e mais!</p>
+</section>
+
+<!-- Formulário: Tudo um abaixo do outro -->
+<main class="conteudo">
+    <h2>📩 Envie sua Dúvida</h2>
+    <p>Preencha passo a passo:</p>
+
+    <form action="mailto:ajudanosestudos0000@gmail.com?subject=Dúvida do Estudante" method="get" enctype="text/plain">
+        <label>Seu Nome Completo:</label>
+        <input type="text" name="Nome" placeholder="Digite seu nome" required>
+        <Br>
+
+        <label>Seu E-mail para Resposta:</label>
+        <input type="email" name="E-mail" placeholder="seuemail@exemplo.com" required>
+        <Br>
+
+        <label>Matéria:</label>
+        <input type="text" name="Matéria" placeholder="Ex: Matemática / História" required>
+        <Br>
+
+        <label>Título da Pergunta:</label>
+        <input type="text" name="Assunto" placeholder="Ex: Equação do 2º grau" required>
+        <Br>
+
+        <label>Sua Dúvida (escreva com detalhes):</label>
+        <textarea name="Mensagem" rows="6" placeholder="Descreva o que precisa entender..." required></textarea>
+        <Br>
+
+        <button onclick="enviarPorEmail(); return false;">Enviar por E-mail 📨</button>
+
+    </form>
+
+    <div class="aviso">
+        <p>📧 E-mail oficial: <strong>ajudanosestudos0000@gmail.com</strong></p>
+        <p>👥 Equipe: Apenas alunos voluntários</p>
+        <p>ℹ️ Ao enviar, seu app de e-mail abrirá com tudo pronto!</p>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<footer class="rodape">
+    <p>© 2026 Ajuda Nos Estudos — Alunos ajudando Alunos 🤝</p>
+</footer>
+
+</body>
+</html>
